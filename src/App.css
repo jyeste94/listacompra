@@ -1,18 +1,20 @@
+body{
+  font-family: 'Martel Sans',Helvetica,Arial,Lucida,sans-serif!important;
+  font-weight: 600!important;
+  color: #545454!important;
+}
 .App {
   text-align: center;
 }
-
 .App-logo {
   height: 40vmin;
   pointer-events: none;
 }
-
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
   }
 }
-
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
@@ -23,10 +25,27 @@
   font-size: calc(10px + 2vmin);
   color: white;
 }
-
 .App-link {
   color: #61dafb;
 }
+.btn{
+  border-radius: 0 !important;
+}
+.btn-primary{
+  background-color: #dc3545 !important;
+  border-color: #dc3545 !important;
+}
+.list-group-item .btn-primary{
+  float: inline-end;
+}
+.btn-outline-secondary{
+  background-color: #198754 !important;
+  border-color: #198754 !important;
+}
+.btn-outline-secondary svg{
+  color: #fff;
+}
+
 
 @keyframes App-logo-spin {
   from {

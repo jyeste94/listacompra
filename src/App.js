@@ -2,8 +2,8 @@ import logo from './logo.svg';
 import './App.css';
 
 import React, { useState, useEffect  } from 'react';
-//import ShoppingList from './components/ShoppingList';
-//import AddItemForm from './components/AddItemForm';
+import ShoppingList from './components/ShoppingList';
+import AddItemForm from './components/AddItemForm';
 
 import { initializeApp } from 'firebase/app';
 import { getFirestore, collection, doc, onSnapshot, updateDoc, setDoc } from 'firebase/firestore';
@@ -64,7 +64,7 @@ function App() {
 
   return (
       <div className="App">
-        <h1>Mi Lista de la Compra</h1>
+        <h1>Lista de la Compra</h1>
         <AddItemForm onAddItem={addItem} />
         <ShoppingList items={items} onRemoveItem={removeItem} />
       </div>
@@ -72,40 +72,7 @@ function App() {
 }
 
 
-function AddItemForm({ onAddItem }) {
-    const [inputValue, setInputValue] = useState('');
 
-    const handleSubmit = (e) => {
-        e.preventDefault();
-        if (inputValue.trim() !== '') {
-            onAddItem(inputValue);
-            setInputValue('');
-        }
-    };
 
-    return (
-        <form onSubmit={handleSubmit}>
-            <input
-                type="text"
-                value={inputValue}
-                onChange={(e) => setInputValue(e.target.value)}
-                placeholder="Añade un artículo..."
-            />
-            <button type="submit">Añadir</button>
-        </form>
-    );
-}
 
-function ShoppingList({ items, onRemoveItem }) {
-    return (
-        <ul className="list-group list-group-flush">
-            { items && items.map((item, index) => (
-                <li key={index} className="list-group-item">
-                    {item.nombre} (Cantidad: {item.cantidad})
-                    <button onClick={() => onRemoveItem(index)}>Eliminar</button>
-                </li>
-            ))}
-        </ul>
-    );
-}
 export default App;
