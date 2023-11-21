@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/listacompra/static/css/main.b1d7ec7b.css",
-    "main.js": "/listacompra/static/js/main.f46708f7.js",
+    "main.css": "/listacompra/static/css/main.b3573c67.css",
+    "main.js": "/listacompra/static/js/main.c732150f.js",
     "static/js/787.ddbb1788.chunk.js": "/listacompra/static/js/787.ddbb1788.chunk.js",
     "static/media/logo.svg": "/listacompra/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "index.html": "/listacompra/index.html",
-    "main.b1d7ec7b.css.map": "/listacompra/static/css/main.b1d7ec7b.css.map",
-    "main.f46708f7.js.map": "/listacompra/static/js/main.f46708f7.js.map",
+    "main.b3573c67.css.map": "/listacompra/static/css/main.b3573c67.css.map",
+    "main.c732150f.js.map": "/listacompra/static/js/main.c732150f.js.map",
     "787.ddbb1788.chunk.js.map": "/listacompra/static/js/787.ddbb1788.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.b1d7ec7b.css",
-    "static/js/main.f46708f7.js"
+    "static/css/main.b3573c67.css",
+    "static/js/main.c732150f.js"
   ]
 }
