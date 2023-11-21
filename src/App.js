@@ -8,6 +8,8 @@ import React, { useState, useEffect  } from 'react';
 import { initializeApp } from 'firebase/app';
 import { getFirestore, collection, doc, onSnapshot, updateDoc, setDoc } from 'firebase/firestore';
 
+import 'bootstrap/dist/css/bootstrap.min.css';
+
 
 const firebaseConfig = {
     apiKey: "AIzaSyApqChk_yEVyUvA1d8EmIo8VK6G0u_Nc14",
@@ -96,9 +98,9 @@ function AddItemForm({ onAddItem }) {
 
 function ShoppingList({ items, onRemoveItem }) {
     return (
-        <ul>
+        <ul className="list-group list-group-flush">
             { items && items.map((item, index) => (
-                <li key={index}>
+                <li key={index} className="list-group-item">
                     {item.nombre} (Cantidad: {item.cantidad})
                     <button onClick={() => onRemoveItem(index)}>Eliminar</button>
                 </li>
